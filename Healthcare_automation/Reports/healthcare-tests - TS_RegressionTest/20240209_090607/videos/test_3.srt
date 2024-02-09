@@ -1,0 +1,12 @@
+1
+00:00:00,183 --> 00:00:00,184
+1. if (individualRun)
+
+2
+00:00:00,185 --> 00:00:00,185
+5. if (true)
+
+3
+00:00:00,186 --> 00:00:00,186
+1. selectOptionByLabel(findTestObject("Page_CuraAppointment/lst_Facility"), "Hongkong CURA Healthcare Center", false)
+

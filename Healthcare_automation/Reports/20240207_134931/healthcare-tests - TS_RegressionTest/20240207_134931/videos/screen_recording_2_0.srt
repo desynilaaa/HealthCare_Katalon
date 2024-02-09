@@ -1,0 +1,16 @@
+1
+00:00:00,072 --> 00:00:00,097
+1. comment("Story: Login to CURA system")
+
+2
+00:00:00,098 --> 00:00:00,101
+5. comment("Given that the user has the valid login information")
+
+3
+00:00:00,101 --> 00:00:04,457
+9. openBrowser(G_SiteURL)
+
+4
+00:00:04,458 --> 00:00:04,591
+13. click(findTestObject("Page_CuraHomepage/btn_MakeAppointment"))
+

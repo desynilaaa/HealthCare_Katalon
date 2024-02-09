@@ -1,0 +1,42 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+healthcare-tests - TS_RegressionTest,Chrome 121.0.0.0,,,08-02-2024 21:49:13,08-02-2024 21:49:35,21.657s,PASSED
+,,,,,,,
+Test Cases/First Test Case,Chrome 121.0.0.0,,,08-02-2024 21:49:13,08-02-2024 21:49:26,12.358s,PASSED
+"openBrowser("""")",Chrome 121.0.0.0,,,08-02-2024 21:49:14,08-02-2024 21:49:17,3.032s,PASSED
+"navigateToUrl(""https://katalon-demo-cura.herokuapp.com/"")",Chrome 121.0.0.0,,,08-02-2024 21:49:17,08-02-2024 21:49:21,3.706s,PASSED
+"click(findTestObject(""Object Repository/New Object/Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 121.0.0.0,,,08-02-2024 21:49:21,08-02-2024 21:49:22,0.833s,PASSED
+"setText(findTestObject(""Object Repository/New Object/Page_CURA Healthcare Service/input_Username_username""), ""John Doe"")",Chrome 121.0.0.0,,,08-02-2024 21:49:22,08-02-2024 21:49:22,0.718s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/New Object/Page_CURA Healthcare Service/input_Password_password""), ""g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM"")",Chrome 121.0.0.0,,,08-02-2024 21:49:22,08-02-2024 21:49:23,0.298s,PASSED
+"click(findTestObject(""Object Repository/New Object/Page_CURA Healthcare Service/button_Login""))",Chrome 121.0.0.0,,,08-02-2024 21:49:23,08-02-2024 21:49:24,0.929s,PASSED
+Video,Chrome 121.0.0.0,,,08-02-2024 21:49:26,08-02-2024 21:49:26,0.001s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC1_Verify Successful Login,Chrome 121.0.0.0,"Verify if users can login successful. 
+
+Steps:
+- Click on 'Book Appointment' button to login
+- Input username and password
+- Click on 'Login' button
+
+Expected result:
+'Appointment' section is displayed after successful login",,08-02-2024 21:49:26,08-02-2024 21:49:28,2.403s,PASSED
+if (individualRun),Chrome 121.0.0.0,,,08-02-2024 21:49:26,08-02-2024 21:49:26,0.002s,PASSED
+"landingPage = verifyElementPresent(findTestObject(""Page_CuraAppointment/div_Appointment""), G_Timeout)",Chrome 121.0.0.0,,,08-02-2024 21:49:26,08-02-2024 21:49:26,0.295s,PASSED
+Video,Chrome 121.0.0.0,,,08-02-2024 21:49:28,08-02-2024 21:49:28,0.001s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC2_Verify Successful Appointment,Chrome 121.0.0.0,"Verify if users can book an appointment sucessfully.
+Pre-condition: Users have already logged in
+
+Steps:
+- Fill in appoinment's information
+- Click on appointment's button
+
+Expected results:
+Appointment Confirmation page is displayed",,08-02-2024 21:49:28,08-02-2024 21:49:35,6.749s,PASSED
+if (individualRun),Chrome 121.0.0.0,,,08-02-2024 21:49:28,08-02-2024 21:49:28,0.002s,PASSED
+if (true),Chrome 121.0.0.0,,,08-02-2024 21:49:28,08-02-2024 21:49:30,2.276s,PASSED
+"comment(""When he fills in valid information in Appointment page"")",Chrome 121.0.0.0,,,08-02-2024 21:49:30,08-02-2024 21:49:30,0.010s,PASSED
+"click(findTestObject(""Object Repository/Page_CuraAppointment/btn_BookAppointment""))",Chrome 121.0.0.0,,,08-02-2024 21:49:30,08-02-2024 21:49:31,0.679s,PASSED
+"verifyTextPresent(""Appointment Confirmation"", false)",Chrome 121.0.0.0,,,08-02-2024 21:49:31,08-02-2024 21:49:32,0.486s,PASSED
+"comment(""Then he should be able to book a new appointment"")",Chrome 121.0.0.0,,,08-02-2024 21:49:32,08-02-2024 21:49:32,0.002s,PASSED
+if (true),Chrome 121.0.0.0,,,08-02-2024 21:49:32,08-02-2024 21:49:33,1.232s,PASSED
+Video,Chrome 121.0.0.0,,,08-02-2024 21:49:35,08-02-2024 21:49:35,0.001s,PASSED

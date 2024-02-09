@@ -1,0 +1,25 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+healthcare-tests - TS_RegressionTest,Chrome 121.0.0.0,,,07-02-2024 14:23:12,07-02-2024 14:23:26,14.472s,PASSED
+,,,,,,,
+Test Cases/First Test Case,Chrome 121.0.0.0,,,07-02-2024 14:23:12,07-02-2024 14:23:23,11.779s,PASSED
+"openBrowser("""")",Chrome 121.0.0.0,,,07-02-2024 14:23:12,07-02-2024 14:23:15,2.785s,PASSED
+"navigateToUrl(""https://katalon-demo-cura.herokuapp.com/"")",Chrome 121.0.0.0,,,07-02-2024 14:23:15,07-02-2024 14:23:18,3.339s,PASSED
+"click(findTestObject(""Object Repository/New Object/Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 121.0.0.0,,,07-02-2024 14:23:18,07-02-2024 14:23:19,0.960s,PASSED
+"setText(findTestObject(""Object Repository/New Object/Page_CURA Healthcare Service/input_Username_username""), ""John Doe"")",Chrome 121.0.0.0,,,07-02-2024 14:23:19,07-02-2024 14:23:20,0.637s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/New Object/Page_CURA Healthcare Service/input_Password_password""), ""g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM"")",Chrome 121.0.0.0,,,07-02-2024 14:23:20,07-02-2024 14:23:20,0.300s,PASSED
+"click(findTestObject(""Object Repository/New Object/Page_CURA Healthcare Service/button_Login""))",Chrome 121.0.0.0,,,07-02-2024 14:23:20,07-02-2024 14:23:21,1.093s,PASSED
+Video,Chrome 121.0.0.0,,,07-02-2024 14:23:23,07-02-2024 14:23:23,0.001s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC1_Verify Successful Login,Chrome 121.0.0.0,"Verify if users can login successful. 
+
+Steps:
+- Click on 'Book Appointment' button to login
+- Input username and password
+- Click on 'Login' button
+
+Expected result:
+'Appointment' section is displayed after successful login",,07-02-2024 14:23:24,07-02-2024 14:23:26,2.546s,PASSED
+if (individualRun),Chrome 121.0.0.0,,,07-02-2024 14:23:24,07-02-2024 14:23:24,0.001s,PASSED
+"landingPage = verifyElementPresent(findTestObject(""Page_CuraAppointment/div_Appointment""), G_Timeout)",Chrome 121.0.0.0,,,07-02-2024 14:23:24,07-02-2024 14:23:24,0.322s,PASSED
+closeBrowser(),Chrome 121.0.0.0,,,07-02-2024 14:23:24,07-02-2024 14:23:24,0.106s,PASSED
+Video,Chrome 121.0.0.0,,,07-02-2024 14:23:26,07-02-2024 14:23:26,0.001s,PASSED

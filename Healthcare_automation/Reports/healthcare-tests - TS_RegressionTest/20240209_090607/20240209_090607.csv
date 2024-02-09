@@ -1,0 +1,29 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+healthcare-tests - TS_RegressionTest,,,2024-02-09 09:06:15,2024-02-09 09:07:40,1m - 24.305s,FAILED
+,,,,,,
+Test Cases/First Test Case,,,2024-02-09 09:06:16,2024-02-09 09:07:34,1m - 17.991s,FAILED
+"openBrowser("""")",,,2024-02-09 09:06:18,2024-02-09 09:07:32,1m - 13.611s,FAILED
+,,,,,,
+Test Cases/Main Test Cases/TC1_Verify Successful Login,,"Verify if users can login successful. 
+
+Steps:
+- Click on 'Book Appointment' button to login
+- Input username and password
+- Click on 'Login' button
+
+Expected result:
+'Appointment' section is displayed after successful login",2024-02-09 09:07:34,2024-02-09 09:07:37,2.850s,FAILED
+if (individualRun),,,2024-02-09 09:07:35,2024-02-09 09:07:35,0.003s,PASSED
+"landingPage = verifyElementPresent(findTestObject(""Page_CuraAppointment/div_Appointment""), G_Timeout)",,,2024-02-09 09:07:35,2024-02-09 09:07:35,0.421s,FAILED
+,,,,,,
+Test Cases/Main Test Cases/TC2_Verify Successful Appointment,,"Verify if users can book an appointment sucessfully.
+Pre-condition: Users have already logged in
+
+Steps:
+- Fill in appoinment's information
+- Click on appointment's button
+
+Expected results:
+Appointment Confirmation page is displayed",2024-02-09 09:07:37,2024-02-09 09:07:40,2.328s,FAILED
+if (individualRun),,,2024-02-09 09:07:38,2024-02-09 09:07:38,0.001s,PASSED
+if (true),,,2024-02-09 09:07:38,2024-02-09 09:07:38,0.037s,FAILED

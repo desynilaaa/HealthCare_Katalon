@@ -1,0 +1,68 @@
+1
+00:00:00,032 --> 00:00:00,034
+1. if (individualRun)
+
+2
+00:00:00,034 --> 00:00:00,035
+5. if (true)
+
+3
+00:00:00,035 --> 00:00:00,560
+1. selectOptionByLabel(findTestObject("Page_CuraAppointment/lst_Facility"), "Hongkong CURA Healthcare Center", false)
+
+4
+00:00:00,563 --> 00:00:00,846
+5. check(findTestObject("Page_CuraAppointment/chk_Medicaid"))
+
+5
+00:00:00,846 --> 00:00:01,104
+9. check(findTestObject("Page_CuraAppointment/chk_Readmission"))
+
+6
+00:00:01,105 --> 00:00:01,650
+13. setText(findTestObject("Page_CuraAppointment/txt_VisitDate"), "27/12/2016")
+
+7
+00:00:01,650 --> 00:00:02,379
+17. setText(findTestObject("Page_CuraAppointment/txt_Comment"), "Please make appointment as soon as possible.")
+
+8
+00:00:02,379 --> 00:00:02,389
+9. comment("When he fills in valid information in Appointment page")
+
+9
+00:00:02,390 --> 00:00:03,055
+13. click(findTestObject("Object Repository/Page_CuraAppointment/btn_BookAppointment"))
+
+10
+00:00:03,056 --> 00:00:03,521
+17. verifyTextPresent("Appointment Confirmation", false)
+
+11
+00:00:03,521 --> 00:00:03,523
+21. comment("Then he should be able to book a new appointment")
+
+12
+00:00:03,523 --> 00:00:03,524
+25. if (true)
+
+13
+00:00:03,524 --> 00:00:03,790
+1. verifyMatch("Hongkong CURA Healthcare Center", getText(findTestObject("Page_AppointmentConfirmation/lbl_Facility")), false)
+
+14
+00:00:03,790 --> 00:00:04,032
+5. verifyMatch("Yes", getText(findTestObject("Page_AppointmentConfirmation/lbl_HospitalReadmission")), false)
+
+15
+00:00:04,032 --> 00:00:04,279
+9. verifyMatch("Medicaid", getText(findTestObject("Page_AppointmentConfirmation/lbl_Program")), false)
+
+16
+00:00:04,279 --> 00:00:04,523
+13. verifyMatch("27/12/2016", getText(findTestObject("Page_AppointmentConfirmation/lbl_VisitDate")), false)
+
+17
+00:00:04,524 --> 00:00:04,775
+17. verifyMatch("Please make appointment as soon as possible.", getText(findTestObject("Page_AppointmentConfirmation/lbl_Comment")), false)
+

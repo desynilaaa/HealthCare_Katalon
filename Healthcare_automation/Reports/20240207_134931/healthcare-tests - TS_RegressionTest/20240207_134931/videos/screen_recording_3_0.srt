@@ -1,0 +1,8 @@
+1
+00:00:00,056 --> 00:00:00,058
+1. comment("Story: Book an appointment")
+
+2
+00:00:00,059 --> 00:00:00,062
+5. comment("Given that the user has logged into their account")
+

@@ -1,0 +1,38 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+healthcare-tests - TS_RegressionTest,Chrome 121.0.0.0,,2024-02-09 09:11:48,2024-02-09 09:12:35,47.015s,PASSED
+,,,,,,
+Test Cases/First Test Case,Chrome 121.0.0.0,,2024-02-09 09:11:50,2024-02-09 09:12:22,32.473s,PASSED
+"openBrowser(""https://katalon-demo-cura.herokuapp.com/"")",Chrome 121.0.0.0,,2024-02-09 09:11:53,2024-02-09 09:12:15,21.828s,PASSED
+"click(findTestObject(""Object Repository/New Object/Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 121.0.0.0,,2024-02-09 09:12:15,2024-02-09 09:12:17,1.963s,PASSED
+"setText(findTestObject(""Object Repository/New Object/Page_CURA Healthcare Service/input_Username_username""), ""John Doe"")",Chrome 121.0.0.0,,2024-02-09 09:12:17,2024-02-09 09:12:18,0.897s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/New Object/Page_CURA Healthcare Service/input_Password_password""), ""g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM"")",Chrome 121.0.0.0,,2024-02-09 09:12:18,2024-02-09 09:12:19,0.818s,PASSED
+"click(findTestObject(""Object Repository/New Object/Page_CURA Healthcare Service/button_Login""))",Chrome 121.0.0.0,,2024-02-09 09:12:19,2024-02-09 09:12:20,1.447s,PASSED
+,,,,,,
+Test Cases/Main Test Cases/TC1_Verify Successful Login,Chrome 121.0.0.0,"Verify if users can login successful. 
+
+Steps:
+- Click on 'Book Appointment' button to login
+- Input username and password
+- Click on 'Login' button
+
+Expected result:
+'Appointment' section is displayed after successful login",2024-02-09 09:12:23,2024-02-09 09:12:25,2.624s,PASSED
+if (individualRun),Chrome 121.0.0.0,,2024-02-09 09:12:23,2024-02-09 09:12:23,0.004s,PASSED
+"landingPage = verifyElementPresent(findTestObject(""Page_CuraAppointment/div_Appointment""), G_Timeout)",Chrome 121.0.0.0,,2024-02-09 09:12:23,2024-02-09 09:12:23,0.152s,PASSED
+,,,,,,
+Test Cases/Main Test Cases/TC2_Verify Successful Appointment,Chrome 121.0.0.0,"Verify if users can book an appointment sucessfully.
+Pre-condition: Users have already logged in
+
+Steps:
+- Fill in appoinment's information
+- Click on appointment's button
+
+Expected results:
+Appointment Confirmation page is displayed",2024-02-09 09:12:25,2024-02-09 09:12:35,9.558s,PASSED
+if (individualRun),Chrome 121.0.0.0,,2024-02-09 09:12:25,2024-02-09 09:12:25,0.003s,PASSED
+if (true),Chrome 121.0.0.0,,2024-02-09 09:12:25,2024-02-09 09:12:29,3.863s,PASSED
+"comment(""When he fills in valid information in Appointment page"")",Chrome 121.0.0.0,,2024-02-09 09:12:29,2024-02-09 09:12:29,0.062s,PASSED
+"click(findTestObject(""Object Repository/Page_CuraAppointment/btn_BookAppointment""))",Chrome 121.0.0.0,,2024-02-09 09:12:29,2024-02-09 09:12:30,0.985s,PASSED
+"verifyTextPresent(""Appointment Confirmation"", false)",Chrome 121.0.0.0,,2024-02-09 09:12:30,2024-02-09 09:12:32,1.688s,PASSED
+"comment(""Then he should be able to book a new appointment"")",Chrome 121.0.0.0,,2024-02-09 09:12:32,2024-02-09 09:12:32,0.010s,PASSED
+if (true),Chrome 121.0.0.0,,2024-02-09 09:12:32,2024-02-09 09:12:33,0.690s,PASSED

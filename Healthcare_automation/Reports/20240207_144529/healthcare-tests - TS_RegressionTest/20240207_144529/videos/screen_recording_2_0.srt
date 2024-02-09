@@ -1,0 +1,8 @@
+1
+00:00:00,068 --> 00:00:00,070
+1. if (individualRun)
+
+2
+00:00:00,071 --> 00:00:00,424
+5. landingPage = verifyElementPresent(findTestObject("Page_CuraAppointment/div_Appointment"), G_Timeout)
+
